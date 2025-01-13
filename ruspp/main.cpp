@@ -1,4 +1,3 @@
-//#include <GL/glew.h>
 #include <GLFW/glfw3.h>
 #include <cmath>
 
@@ -34,7 +33,8 @@ int main(void)
         for (float x = -5; x <= 5; x+=0.001f)
         {
             // Set function here
-            float y = 0.2f/x;
+            // Example: float y = 0.2f/x;
+            float y = sin(x);
             glVertex2f(x* scale, y* scale);
         }
         glEnd();
